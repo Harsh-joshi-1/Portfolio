@@ -1,5 +1,6 @@
 const CLOUDINARY_BASE = "https://res.cloudinary.com/dp4xt0bve/image/upload";
 const CLOUDINARY_VERSION = "v1778140840";
+export const RESUME_URL = "/resume-v2.pdf"; // The actual file location
 
 const optimizedImage = (path: string, width?: number, version?: string) => {
   // Remove leading slash if present
@@ -25,7 +26,7 @@ export const resumeData = {
     github: "https://github.com/joshi407harsh", // Placeholder link
     summary: "ECE student at NIT Jalandhar building full stack and AI-powered applications. Experienced in developing real-world products and integrating LLM-based features. Interested in backend systems, scalable architectures, and applying AI to real-world problems.",
     image: optimizedImage("harsh.jpg", 1200, "v1778146871"), // Hero image limited to 1200px
-    resume: "/resume.pdf"
+    resume: "/resume"
   },
   skills: {
     languages: ["C/C++", "Python", "JavaScript", "TypeScript"],
