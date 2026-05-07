@@ -78,7 +78,7 @@ export default function Contact() {
               <p className="text-sm text-indigo-600 dark:text-indigo-400">
                 {resumeData.personalInfo.role}
               </p>
-              
+
               <div className="mt-6 space-y-2 text-sm text-gray-600 dark:text-neutral-300">
                 <div className="flex items-center justify-center gap-2">
                   <Mail className="w-4 h-4" />
@@ -115,18 +115,14 @@ export default function Contact() {
         <div className="bg-indigo-600 dark:bg-indigo-700 rounded-3xl p-8 md:p-12 text-white relative overflow-hidden">
           <div className="relative z-10">
             <h2 className="text-3xl font-bold">Ready to chat?</h2>
-            <p className="mt-2 opacity-90">
-              Open to full-time, contract, and advisory roles. If you'd like to
-              review private work, I can send video demos and additional
-              documentation.
-            </p>
+
             <div className="mt-6 flex flex-col sm:flex-row gap-4">
               <Link
                 href={`mailto:${resumeData.personalInfo.email}`}
                 className="inline-flex items-center gap-2 bg-white text-indigo-600 px-5 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors w-fit"
               >
                 <Mail className="w-5 h-5" />
-                {resumeData.personalInfo.email}
+                Message Me
               </Link>
               <Link
                 href={resumeData.personalInfo.resume}

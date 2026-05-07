@@ -146,18 +146,18 @@ export default function Home() {
                           {exp.company}
                         </p>
                         {exp.companyLink && (
-                          <Link 
-                            href={exp.companyLink} 
-                            target="_blank" 
+                          <Link
+                            href={exp.companyLink}
+                            target="_blank"
                             className="inline-flex items-center gap-2 px-3 py-1.5 bg-neutral-900 dark:bg-neutral-800 text-white rounded-xl text-sm font-bold hover:bg-black transition-all border border-neutral-700 shadow-lg group"
                           >
-                            <svg 
-                              className="w-4 h-4 text-gray-300 group-hover:text-white transition-colors" 
-                              viewBox="0 0 24 24" 
-                              fill="none" 
-                              stroke="currentColor" 
-                              strokeWidth="2.5" 
-                              strokeLinecap="round" 
+                            <svg
+                              className="w-4 h-4 text-gray-300 group-hover:text-white transition-colors"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              strokeWidth="2.5"
+                              strokeLinecap="round"
                               strokeLinejoin="round"
                             >
                               <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
@@ -367,7 +367,7 @@ export default function Home() {
                 className="inline-flex items-center justify-center gap-2 bg-white text-indigo-600 px-5 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors w-fit"
               >
                 <Mail className="w-5 h-5" />
-                {resumeData.personalInfo.email}
+                Message Me
               </Link>
             </div>
           </div>
