@@ -1,36 +1,84 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Harsh Joshi | Portfolio 🚀
 
-## Getting Started
+A high-performance, modern, and responsive personal portfolio website built with **Next.js 15**, **Tailwind CSS**, and **TypeScript**. Optimized for speed, SEO, and premium aesthetics.
 
-First, run the development server:
+![Harsh Joshi Portfolio](https://res.cloudinary.com/dp4xt0bve/image/upload/f_auto,q_auto,w_1200,c_limit/v1778146871/harsh.webp)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## ✨ Key Features
+
+-   **⚡ Blazing Fast Performance**: Built with Next.js App Router and optimized with Cloudinary for dynamic image delivery.
+-   **🌓 Dark Mode & Themes**: Fully integrated dark mode with a sleek toggle and system preference detection.
+-   **📱 Fully Responsive**: Mobile-first design with a premium sidebar navigation for smaller screens.
+-   **🎨 Premium Aesthetics**: Uses glassmorphism, smooth transitions, and modern typography (Poppins).
+-   **🔍 SEO Optimized**: Dynamic metadata, semantic HTML, and accessibility best practices.
+-   **📈 Image Optimization**: Automated format conversion to WebP/AVIF via Cloudinary integration.
+
+## 🛠️ Tech Stack
+
+-   **Framework**: [Next.js 15](https://nextjs.org/) (App Router)
+-   **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+-   **Language**: [TypeScript](https://www.typescriptlang.org/)
+-   **Icons**: [Lucide React](https://lucide.dev/), [React Icons](https://react-icons.github.io/react-icons/)
+-   **Images**: [Cloudinary](https://cloudinary.com/) (Dynamic Transformation API)
+-   **Fonts**: [Google Fonts (Poppins)](https://fonts.google.com/specimen/Poppins)
+
+## 📁 Project Structure
+
+```text
+portfolio/
+├── src/
+│   ├── app/            # Next.js App Router (Pages & Layouts)
+│   ├── components/     # Reusable UI components
+│   ├── data/           # Centralized data (resume.ts)
+│   └── lib/            # Utility functions
+├── public/             # Static assets
+├── next.config.ts      # Next.js configuration
+└── tailwind.config.ts  # Tailwind CSS configuration
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Getting Started
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Prerequisites
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+-   Node.js 18.x or later
+-   npm, yarn, or pnpm
 
-## Learn More
+### Installation
 
-To learn more about Next.js, take a look at the following resources:
+1.  **Clone the repository**:
+    ```bash
+    git clone https://github.com/joshi407harsh/portfolio.git
+    cd portfolio
+    ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2.  **Install dependencies**:
+    ```bash
+    npm install
+    ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+3.  **Run the development server**:
+    ```bash
+    npm run dev
+    ```
 
-## Deploy on Vercel
+4.  **Build for production**:
+    ```bash
+    npm run build
+    npm start
+    ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📄 Data Customization
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+All personal information, project details, and skills are centralized in `src/data/resume.ts`. To customize the portfolio, simply update the `resumeData` object in that file.
+
+## 🤝 Contact
+
+-   **LinkedIn**: [in/harshjoshi](https://linkedin.com/in/harshjoshi)
+-   **GitHub**: [@joshi407harsh](https://github.com/joshi407harsh)
+-   **Twitter**: [@rHarshJoshi](https://x.com/rHarshJoshi)
+-   **Instagram**: [@harsh_existed](https://www.instagram.com/harsh_existed/)
+-   **Email**: [joshi407harsh@gmail.com](mailto:joshi407harsh@gmail.com)
+
+---
+
+Built with ❤️ by [Harsh Joshi](https://github.com/joshi407harsh)
