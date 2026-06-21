@@ -23,7 +23,7 @@ export const resumeData = {
     phone: "+91 7717413070",
     email: "joshi407harsh@gmail.com",
     linkedin: "https://linkedin.com/in/harshjoshi", // Placeholder link
-    github: "https://github.com/joshi407harsh", // Placeholder link
+    github: "https://github.com/Harsh-joshi-1", // Placeholder link
     summary: "ECE student at NIT Jalandhar building full stack and AI-powered applications. Experienced in developing real-world products and integrating LLM-based features. Interested in backend systems, scalable architectures, and applying AI to real-world problems.",
     image: optimizedImage("harsh.jpg", 1200, "v1778146871"), // Hero image limited to 1200px
     resume: "/resume"
