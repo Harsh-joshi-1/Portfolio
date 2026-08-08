@@ -1,8 +1,11 @@
 const CLOUDINARY_BASE = "https://res.cloudinary.com/dp4xt0bve/image/upload";
 const CLOUDINARY_VERSION = "v1778140840";
-export const RESUME_URL = "/resume-v2.pdf"; // The actual file location
+export const RESUME_URL = "/resume-v3.pdf"; // The actual file location
 
 const optimizedImage = (path: string, width?: number, version?: string) => {
+  if (path.startsWith('/images/')) {
+    return path;
+  }
   // Remove leading slash if present
   const fileName = path.startsWith('/') ? path.slice(1) : path;
   // Replace spaces with underscores and ensure .webp extension
@@ -22,7 +25,7 @@ export const resumeData = {
     role: "Electronics and Communication Engineering Student",
     phone: "+91 7717413070",
     email: "joshi407harsh@gmail.com",
-    linkedin: "https://linkedin.com/in/harshjoshi", // Placeholder link
+    linkedin: "https://linkedin.com/in/harshjoshi001", // Placeholder link
     github: "https://github.com/Harsh-joshi-1", // Placeholder link
     summary: "ECE student at NIT Jalandhar building full stack and AI-powered applications. Experienced in developing real-world products and integrating LLM-based features. Interested in backend systems, scalable architectures, and applying AI to real-world problems.",
     image: optimizedImage("harsh.jpg", 1200, "v1778146871"), // Hero image limited to 1200px
@@ -42,7 +45,7 @@ export const resumeData = {
     {
       institution: "Dr. B. R. Ambedkar National Institute of Technology (NIT), Jalandhar",
       degree: "Bachelor of Technology in Electronics and Communication",
-      score: "CGPA: 8.68/10",
+      score: "CGPA: 8.43/10",
       period: "2024-2028"
     },
     {
@@ -53,6 +56,19 @@ export const resumeData = {
     }
   ],
   experience: [
+    {
+      role: "Software Engineer Intern",
+      company: "Grey Volk",
+      companyLink: "https://greyvolk-portal.vercel.app",
+      period: "JUNE 2026",
+      type: "professional",
+      points: [
+        "Leveraged AI-assisted workflows to architect a 45-user internal operations platform, significantly accelerating full-stack feature delivery.",
+        "Engineered 8 operational modules (Payroll, Inventory, HR) with strict Role-Based Access Control (RBAC) and schema validation across 30+ RESTful APIs.",
+        "Architected an asynchronous AI support agent using LLM function calling and Redis queues to parse, classify, and auto-respond to customer emails.",
+        "Owned the software development lifecycle, implementing automated testing practices to ensure production stability and continuous enhancements."
+      ]
+    },
     {
       role: "Freelance Web Developer",
       company: "Haven Homes Punjab",
@@ -69,23 +85,34 @@ export const resumeData = {
   ],
   projects: [
     {
-      id: 1,
-      name: "Project Vienna – AI-Powered Real Estate Assistant",
+      id: 7,
+      name: "HRMS Dashboard",
       role: "Developer",
-      description: "An AI-powered assistant for real estate queries and recommendations with dynamic backend APIs to process queries and personalized responses.",
-      techStack: ["React.js", "Node.js", "AI/NLP tools"],
+      description: "A comprehensive internal operations portal featuring automated attendance, payroll cycles, leave balance tracking, and role-based workspaces.",
+      techStack: ["Next.js", "Express.js", "PostgreSQL", "Tailwind CSS"],
       links: [
-        { name: "Live", url: "https://kyoto-murex.vercel.app/" },
-        { name: "Demo", url: "https://youtu.be/QfUpYXGFnhc" },
-        { name: "Code", url: "https://github.com/joshi407harsh" }
+        { name: "Live", url: "https://greyvolk-portal.vercel.app" }
       ],
       points: [
-        "Built an AI-powered assistant for real estate queries and recommendations",
-        "Designed backend APIs to process user queries and fetch relevant data dynamically",
-        "Implemented a priority-based appointment system for admins to handle high-intent leads",
-        "Improved user engagement through personalized responses and automation"
+        "Architected and deployed a multi-module internal platform managing attendance, leaves, and payroll for 45+ users",
+        "Engineered strict Role-Based Access Control (RBAC) separating Super Admin, Admin, and Employee workflows",
+        "Developed schema-validated REST APIs to guarantee secure transaction processing and data integrity"
       ],
-      images: [optimizedImage("1.png")]
+      images: [optimizedImage("/images/hrms.png")]
+    },
+    {
+      id: 8,
+      name: "Email Customer Support Agent",
+      role: "Developer",
+      description: "An asynchronous AI-powered email support agent that automatically processes, categorizes, and generates drafts for incoming customer emails.",
+      techStack: ["Node.js", "Redis", "OpenAI API", "React.js"],
+      links: [],
+      points: [
+        "Designed an event-driven email processor using Redis queues for background job handling",
+        "Integrated LLM function calling to classify tickets into categories like Open Tickets and Fan Mail",
+        "Built a real-time admin support desk showing tickets status and auto-synced Gmail inbox updates"
+      ],
+      images: [optimizedImage("/images/support.png")]
     },
     {
       id: 2,
@@ -153,6 +180,25 @@ export const resumeData = {
         "Handled state management and API integrations"
       ],
       images: [optimizedImage("5.png")]
+    },
+    {
+      id: 1,
+      name: "Project Vienna – AI-Powered Real Estate Assistant",
+      role: "Developer",
+      description: "An AI-powered assistant for real estate queries and recommendations with dynamic backend APIs to process queries and personalized responses.",
+      techStack: ["React.js", "Node.js", "AI/NLP tools"],
+      links: [
+        { name: "Live", url: "https://kyoto-murex.vercel.app/" },
+        { name: "Demo", url: "https://youtu.be/QfUpYXGFnhc" },
+        { name: "Code", url: "https://github.com/joshi407harsh" }
+      ],
+      points: [
+        "Built an AI-powered assistant for real estate queries and recommendations",
+        "Designed backend APIs to process user queries and fetch relevant data dynamically",
+        "Implemented a priority-based appointment system for admins to handle high-intent leads",
+        "Improved user engagement through personalized responses and automation"
+      ],
+      images: [optimizedImage("1.png")]
     }
   ],
   achievements: [
